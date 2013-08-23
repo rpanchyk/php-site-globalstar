@@ -1,0 +1,21 @@
+html,body{
+	height:100%;
+	margin:0px;
+	padding:0px
+}
+
+BODY 
+{
+	background-image: url('images/wallpaper-428629.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+	overflow-y:scroll;
+	background-attachment: fixed;
+}
+
+a { 	text-decoration:underline; color:#000; 
+	font-family: "Georgia", Courier, mono;
+	font-size:11px;
+}
+a:visited { text-decoration: underline; color:#000; }
+a:hover { text-decoration:none; color:#000; }
