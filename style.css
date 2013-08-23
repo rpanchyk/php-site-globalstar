@@ -1,0 +1,150 @@
+/*=============================================================*/
+/*====================== C P A N E L ==========================*/
+/*=============================================================*/
+body.cpan { background-color:#EEEEEE; }
+
+a.cp
+	{
+		text-decoration:none; color:#33CC99; 
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		font-weight:none;
+	}
+a.cp:visited	{	text-decoration:none; color:#006666; }
+a.cp:hover		{	text-decoration:none; color:#000000; }
+
+table.bbc
+	{
+		border-color:#CCCCCC;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+	}
+textarea.bbc
+	{
+		border:groove;
+	}
+input.bbc
+	{
+		/*border:none;*/
+		border: 1px solid silver;
+	}
+
+/* FONTS (b) */
+font.red_b
+	{
+		color:#FF0000;
+		font-weight:bold;
+	}
+font.cp_default
+	{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+	}
+/* FONTS (e) */
+
+div.quote
+	{
+		color: #757575;
+		background-color: #f2f2f2;
+		border: 1px dotted #bebebe;
+		text-align: justify;
+		padding: 5px;
+	}
+div.code
+	{
+		color: #757575;
+		background-color: #FFEEEE; 
+		border: 1px dotted #bebebe;
+		text-align: left;
+		padding: 5px;
+	}
+
+/*=============================================================*/
+/*======================== S I T E ============================*/
+/*=============================================================*/
+
+body.site
+		{
+			SCROLLBAR-FACE-COLOR:#D9AE01;   SCROLLBAR-HIGHLIGHT-COLOR:#FFE682;
+			SCROLLBAR-SHADOW-COLOR:#645000; SCROLLBAR-3DLIGHT-COLOR:#FECB00;
+			SCROLLBAR-ARROW-COLOR:#000000;  SCROLLBAR-TRACK-COLOR:#FEDB4F;
+			SCROLLBAR-DARKSHADOW-COLOR:#FFCC00; /*cursor: url(cursor.cur), default; */
+			/*color:#808080;
+			background-color:#562B00;
+			background-image:url(images/bg.gif); */
+			margin:0px;
+			margin-left:0px;
+			margin-right:8px;
+			margin-top:0px;
+		}
+
+a {	
+	text-decoration:none; color:#4C2A04; 
+	font-family: "Verdana", Courier, mono;
+	font-size:12px;
+  }
+a:visited { text-decoration:none; color:#4C2A04; }
+a:hover { color:#FFFFFF; }
+
+a.site
+	{
+		text-decoration:none; color:#000000; 
+		font-family: "Verdana", Courier, mono;
+		font-size:10px;
+	}
+a.site:visited	{ text-decoration:none; color:#000000; }
+a.site:hover	{ color:#FF4500; font-weight:bold; }
+
+div.menu {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;color: #62190A;}
+div.foot {font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color:#333333;}
+div.cont_text {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 10px;
+				color: #000000;
+			}
+div.greet {font-size: 14px; font-weight:bold; font-family: Verdana, Arial, Helvetica, sans-serif; color:#CC9933;}
+div.greet2 {font-size: 13px; font-weight:bold; font-family: Verdana, Arial, Helvetica, sans-serif; color:#FF9900;}
+
+table.site
+	{
+		border-color:#000000;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:10px;
+		color:#000000;
+	}
+
+
+.style7 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF9900;
+	font-weight: bold;
+}
+.style9 {font-size: 10px; color: #FF9900; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style10 {color: #FF6600}
+.style13 {color: #666666}
+.style15 {color: #999999}
+.style16 {color: #FFA500}
+
+.стиль2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-size: 12px;
+}
+.стиль3 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #CCCCCC; font-weight: bold; font-size: 10px; }
+.стиль4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFCC00;
+}
+.стиль44 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4C2A04;
+}
+.стиль45 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #C68237;
+}

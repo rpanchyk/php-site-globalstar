@@ -4,9 +4,9 @@ define ("DBHOST", "localhost");
 
 define ("DBNAME", "globalstar");
 
-define ("DBUSER", "user");
+define ("DBUSER", "georgiy");
 
-define ("DBPASS", "pass");
+define ("DBPASS", "wsadmin");
 
 define ("PREFIX", "fth"); 
 
