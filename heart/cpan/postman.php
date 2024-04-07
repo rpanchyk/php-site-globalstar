@@ -65,7 +65,7 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 			// delete
 			?>
 			<script type="text/javascript">
-				if ( window.confirm('Удалить запись ?')==true )
+				if ( window.confirm('РЈРґР°Р»РёС‚СЊ Р·Р°РїРёСЃСЊ ?')==true )
 					{ window.document.location.href="<?= ($_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&del_id='.$httpquery->request['del_id'].'&delete=y') ?>"; }
 			</script>
 			<?
@@ -87,7 +87,7 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 	}
 	else
 	{
-		echo '<h2 align=center>Добро пожаловать в раздел редактирования содержимого сайта.</h2>';
+		echo '<h2 align=center>Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ СЂР°Р·РґРµР» СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЃР°Р№С‚Р°.</h2>';
 	}
 	?>
 	</td>
@@ -123,7 +123,7 @@ function listPost_form($cat_id, $pArr)
 	?>
 		<form method="post" action="<?=$_SERVER['SCRIPT_NAME']?>?action=pst">
 			<input type="hidden" name="cat_id" value="<?=$cat_id?>">
-			<input type="submit" name="doNewPost" value="Добавить" class="bbc">
+			<input type="submit" name="doNewPost" value="Р”РѕР±Р°РІРёС‚СЊ" class="bbc">
 		</form>
 		<div>&nbsp;</div>
 	<?
@@ -136,10 +136,10 @@ function listPost_form($cat_id, $pArr)
 	<tr style="font-weight:bold;text-align:center;background-color:#3CB371;color:#FFF;">
 		<td width="1%">ORDER</td>
 		<td width="1%">EDIT</td>
-		<td>Название</td>
-		<td width="10%">Просмотр</td>
-		<td width="10%">Дата создания</td>
-		<td width="10%">Удалить</td>
+		<td>РќР°Р·РІР°РЅРёРµ</td>
+		<td width="10%">РџСЂРѕСЃРјРѕС‚СЂ</td>
+		<td width="10%">Р”Р°С‚Р° СЃРѕР·РґР°РЅРёСЏ</td>
+		<td width="10%">РЈРґР°Р»РёС‚СЊ</td>
 	</tr>
 	<?
 	$i=0;
@@ -148,11 +148,11 @@ function listPost_form($cat_id, $pArr)
 		if ($i % 2)	{$bgcolor = 'FDF5E6';} else	{$bgcolor = 'FFE4B5';}
 		echo '<tr style="background-color:#'.$bgcolor.'">';
 		echo '<td align="center">'.$value['ord'].'</td>';
-		echo '<td align="center" nowrap>'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'" class="cp" title="Редактировать"><img src="heart/cpan/cp_images/edit.gif" border="0" /></a>'.'</td>';
-		echo '<td style="cursor:pointer;" title="Редактировать" onclick=\'javascript:window.document.location.href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'";\'>'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'" class="cp" title="Редактировать">'.$value['head'].'</a>'.'</td>';
-		echo '<td align="center" nowrap>'.'<a href="index.php?pid='.$value['id'].'" class="cp" title="Вид на сайте (откроется в новом окне)" target="_blank"><img src="heart/cpan/cp_images/preview.gif" border="0" /></a>'.'</td>';
+		echo '<td align="center" nowrap>'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'" class="cp" title="Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ"><img src="heart/cpan/cp_images/edit.gif" border="0" /></a>'.'</td>';
+		echo '<td style="cursor:pointer;" title="Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ" onclick=\'javascript:window.document.location.href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'";\'>'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&edt_id='.$value['id'].'" class="cp" title="Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ">'.$value['head'].'</a>'.'</td>';
+		echo '<td align="center" nowrap>'.'<a href="index.php?pid='.$value['id'].'" class="cp" title="Р’РёРґ РЅР° СЃР°Р№С‚Рµ (РѕС‚РєСЂРѕРµС‚СЃСЏ РІ РЅРѕРІРѕРј РѕРєРЅРµ)" target="_blank"><img src="heart/cpan/cp_images/preview.gif" border="0" /></a>'.'</td>';
 		echo '<td align="center" nowrap>'.$value['date_edit'].'</td>';
-		echo '<td align="center">'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&del_id='.$value['id'].'" class="cp" title="Удалить"><img src="heart/cpan/cp_images/delete.gif" border="0" /></a>'.'</td>';
+		echo '<td align="center">'.'<a href="'.$_SERVER['SCRIPT_NAME'].'?action=pst&id='.$httpquery->request['id'].'&del_id='.$value['id'].'" class="cp" title="РЈРґР°Р»РёС‚СЊ"><img src="heart/cpan/cp_images/delete.gif" border="0" /></a>'.'</td>';
 		echo '</tr>';
 		
 		(++$i);

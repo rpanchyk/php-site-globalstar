@@ -14,7 +14,7 @@ function show_Params()
 //	echo "<br>menu_W = ".$par['img_menu_w'];
 	require_once ENGINE_DIR.'/inc/config.php';
 	?>
-		<h2 align="center">Парметры для конфигурирования</h2>
+		<h2 align="center">РџР°СЂРјРµС‚СЂС‹ РґР»СЏ РєРѕРЅС„РёРіСѓСЂРёСЂРѕРІР°РЅРёСЏ</h2>
 		<form method="post" action="<?=$_SERVER['SCRIPT_NAME']?>?action=cfg">
 		
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
@@ -22,7 +22,7 @@ function show_Params()
 		<tr><td>
 		
 			<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-			<tr><td><b>Файлы, допустимые для загрузки на сервер</b></td><td width="50%">
+			<tr><td><b>Р¤Р°Р№Р»С‹, РґРѕРїСѓСЃС‚РёРјС‹Рµ РґР»СЏ Р·Р°РіСЂСѓР·РєРё РЅР° СЃРµСЂРІРµСЂ</b></td><td width="50%">
 			<input type="text" name="upload_allow" maxlength="256" value="<?=$config['upload_allow']?>" style="width:100%" class="bbc">
 			</td></tr></table>
 		
@@ -34,11 +34,11 @@ function show_Params()
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 		
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Размер уменьшеного изображения в тексте </b></td><td width="50%">
+		<tr><td><b>Р Р°Р·РјРµСЂ СѓРјРµРЅСЊС€РµРЅРѕРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РІ С‚РµРєСЃС‚Рµ </b></td><td width="50%">
 		<input type="text" name="img_w" maxlength="256" value="<?=$config['img_w']?>" style="width:20%" class="bbc">
 		&nbsp; x &nbsp;
 		<input type="text" name="img_h" maxlength="256" value="<?=$config['img_h']?>" style="width:20%" class="bbc">
-		&nbsp; (высота Х ширина)
+		&nbsp; (РІС‹СЃРѕС‚Р° РҐ С€РёСЂРёРЅР°)
 		</td></tr></table>
 		
 		</td></tr></table>
@@ -48,11 +48,11 @@ function show_Params()
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Размер уменьшеного изображения в анонсах </b></td><td width="50%">
+		<tr><td><b>Р Р°Р·РјРµСЂ СѓРјРµРЅСЊС€РµРЅРѕРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РІ Р°РЅРѕРЅСЃР°С… </b></td><td width="50%">
 		<input type="text" name="img_x" maxlength="256" value="<?=$config['img_x']?>" style="width:20%" class="bbc">
 		&nbsp; x &nbsp;
 		<input type="text" name="img_y" maxlength="256" value="<?=$config['img_y']?>" style="width:20%" class="bbc">
-		&nbsp; (высота Х ширина)
+		&nbsp; (РІС‹СЃРѕС‚Р° РҐ С€РёСЂРёРЅР°)
 		</td></tr></table>
 		
 		</td></tr></table>
@@ -66,7 +66,7 @@ function show_Params()
 		<tr><td>
 		
 			<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-			<tr><td><b>Папка рисунков</b></td><td width="50%">
+			<tr><td><b>РџР°РїРєР° СЂРёСЃСѓРЅРєРѕРІ</b></td><td width="50%">
 			<input type="text" name="img_dir" maxlength="256" value="<?=$config['img_dir']?>" style="width:100%" class="bbc">
 			</td></tr></table>
 		
@@ -76,7 +76,7 @@ function show_Params()
 -->
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%"><tr><td>
 		<input type="hidden" name="module" value="cfg">
-		<input type="submit" name="doSend" value="Отправить" class="bbc">
+		<input type="submit" name="doSend" value="РћС‚РїСЂР°РІРёС‚СЊ" class="bbc">
 		</td></tr></table>
 
 		</form>
@@ -115,7 +115,7 @@ function save_Params()
 			fclose($handler);
 		}
 		else
-			echo_message("Невозможно сохранить пареметры.");
+			echo_message("РќРµРІРѕР·РјРѕР¶РЅРѕ СЃРѕС…СЂР°РЅРёС‚СЊ РїР°СЂРµРјРµС‚СЂС‹.");
 	}
 //echo "<pre>";
 //print_r($file);

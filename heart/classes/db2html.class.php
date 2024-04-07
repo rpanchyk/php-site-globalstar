@@ -64,7 +64,7 @@ class db2html
 				{	
 					$post = preg_replace( 	
 							"#<img src=".$matches[1][$i]."(.*?)>#is", 
-							"<a href=\"javascript:openWindow('".$file_big."', 'my_wind', ".$size_img[1].", ".$size_img[0].");\" title=\"Èñòèííûé ðàçìåð\"><img align=".$pic_align." src=\"".'/uploads'."/".$file_small."\" \\1></a>", 
+							"<a href=\"javascript:openWindow('".$file_big."', 'my_wind', ".$size_img[1].", ".$size_img[0].");\" title=\"Ð˜ÑÑ‚Ð¸Ð½Ð½Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€\"><img align=".$pic_align." src=\"".'/uploads'."/".$file_small."\" \\1></a>", 
 							$post
 							);
 				}

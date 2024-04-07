@@ -26,22 +26,22 @@ if ($send != "no")
 	mail($to, $subject, $msg, $mailheaders);
 
 	// Result
-	$send_result = '<span><center>Уважаемый '.
+	$send_result = '<span><center>РЈРІР°Р¶Р°РµРјС‹Р№ '.
 		$httpquery->request['sender_name'].
-		', ваше сообщение было успешно отправленно.</center></span>';
+		', РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ Р±С‹Р»Рѕ СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРЅРѕ.</center></span>';
 }
 else
 {
 	if ($httpquery->request['sender_name'] == "")		
-		$send_result = '<font color="red"> Вы не заполнили поле ИМЯ! </font>';
+		$send_result = '<font color="red"> Р’С‹ РЅРµ Р·Р°РїРѕР»РЅРёР»Рё РїРѕР»Рµ РРњРЇ! </font>';
 	
 	if ($httpquery->request['sender_mail'] == "")		
-		$send_result = '<font color="red">Вы не заполнили поле E-mail! </font><br />';
+		$send_result = '<font color="red">Р’С‹ РЅРµ Р·Р°РїРѕР»РЅРёР»Рё РїРѕР»Рµ E-mail! </font><br />';
 	else if (!preg_match("/^([a-z,0-9])+\@([a-z,0-9])+(\.([a-z,0-9])+)+$/", $httpquery->request['sender_mail']))		
-		$send_result = '<font color="red"> Вы не правильно заполнили поле E-mail! </font>';
+		$send_result = '<font color="red"> Р’С‹ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ Р·Р°РїРѕР»РЅРёР»Рё РїРѕР»Рµ E-mail! </font>';
 	
 	if ($httpquery->request['message'] == "")		
-		$send_result = '<font color="red">Вы не заполнили поле Сообщение! </font></font></span></p>
+		$send_result = '<font color="red">Р’С‹ РЅРµ Р·Р°РїРѕР»РЅРёР»Рё РїРѕР»Рµ РЎРѕРѕР±С‰РµРЅРёРµ! </font></font></span></p>
 			<p><strong><span><font face="Verdana, Arial, Helvetica, sans-serif">';
 }
 ?>

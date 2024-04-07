@@ -7,7 +7,7 @@ require_once CPANEL_DIR.'/head.php';
 require_once CPANEL_DIR.'/top.php';
 ?>
 
-<h2 align="center">Смена имени/пароля администратора сайта</h2>
+<h2 align="center">РЎРјРµРЅР° РёРјРµРЅРё/РїР°СЂРѕР»СЏ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° СЃР°Р№С‚Р°</h2>
 
 <?
 function get_accessParam()
@@ -34,22 +34,22 @@ function get_accessParam()
 				{	
 					$result = $db->query('UPDATE '.PREFIX.'_user SET login=\''.$httpquery->request['new_log'].'\' WHERE id='.$acc['uid'].' LIMIT 1');
 					if ($result)
-						echo_message('<br><center>Имя пользователя успешно изменено :)</center>');
+						echo_message('<br><center>РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅРµРЅРѕ :)</center>');
 				}
 				else
-					echo_message('<br><center>Имя пользователя задано в неправильном формате!</center>');
+					echo_message('<br><center>РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Р·Р°РґР°РЅРѕ РІ РЅРµРїСЂР°РІРёР»СЊРЅРѕРј С„РѕСЂРјР°С‚Рµ!</center>');
 				# password change:
 				if (is_good($httpquery->request['new_pass']))
 				{	
 					$result = $db->query('UPDATE '.PREFIX.'_user SET password=\''.md5($httpquery->request['new_pass']).'\' WHERE id='.$acc['uid'].' LIMIT 1');
 					if ($result)
-						echo_message('<br><center>Пароль пользователя успешно изменен :)</center>');
+						echo_message('<br><center>РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅРµРЅ :)</center>');
 				}
 				else
-					echo_message('<br><center>Пароль пользователя задан в неправильном формате!</center>');
+					echo_message('<br><center>РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Р·Р°РґР°РЅ РІ РЅРµРїСЂР°РІРёР»СЊРЅРѕРј С„РѕСЂРјР°С‚Рµ!</center>');
 			}
 			else
-				echo_message("<br><center>Неправильные данные текущего логина/пароля!");
+				echo_message("<br><center>РќРµРїСЂР°РІРёР»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ С‚РµРєСѓС‰РµРіРѕ Р»РѕРіРёРЅР°/РїР°СЂРѕР»СЏ!");
 		}
 	}
 }
@@ -62,14 +62,14 @@ function show_accessParam()
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Текущий логин администратора</b></td><td width="50%">
+		<tr><td><b>РўРµРєСѓС‰РёР№ Р»РѕРіРёРЅ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°</b></td><td width="50%">
 		<input type="text" name="curr_log" maxlength="256" value="" style="width:100%" class="bbc">
 		</td></tr></table></td></tr></table>
 		<br>
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Текущий пароль администратора</b></td><td width="50%">
+		<tr><td><b>РўРµРєСѓС‰РёР№ РїР°СЂРѕР»СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°</b></td><td width="50%">
 		<input type="password" name="curr_pass" maxlength="256" value="" style="width:100%" class="bbc">
 		</td></tr></table></td></tr></table>
 		<br>
@@ -77,21 +77,21 @@ function show_accessParam()
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Новый логин администратора</b></td><td width="50%">
+		<tr><td><b>РќРѕРІС‹Р№ Р»РѕРіРёРЅ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°</b></td><td width="50%">
 		<input type="text" name="new_log" maxlength="256" value="" style="width:100%" class="bbc">
 		</td></tr></table></td></tr></table>
 		<br>
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
 		style=" border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD"><tr><td>
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" class="cp">
-		<tr><td><b>Новый пароль администратора</b></td><td width="50%">
+		<tr><td><b>РќРѕРІС‹Р№ РїР°СЂРѕР»СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°</b></td><td width="50%">
 		<input type="password" name="new_pass" maxlength="256" value="" style="width:100%" class="bbc">
 		</td></tr></table></td></tr></table>
 		<br>
 
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%"><tr><td>
 		<input type="hidden" name="module" value="acc">
-		<input type="submit" name="doChng" value="Отправить" class="bbc">
+		<input type="submit" name="doChng" value="РћС‚РїСЂР°РІРёС‚СЊ" class="bbc">
 		</td></tr></table>
 		</form>
 	<?

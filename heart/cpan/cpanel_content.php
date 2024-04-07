@@ -29,8 +29,8 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 					<td bgcolor="<?=$colorDef?>"
 					onMouseOver="mOverBg(this)"
 					onMouseOut="mOutBg(this)">
-						<h1> Категории </h1>
-						Управление типами категорий
+						<h1> РљР°С‚РµРіРѕСЂРёРё </h1>
+						РЈРїСЂР°РІР»РµРЅРёРµ С‚РёРїР°РјРё РєР°С‚РµРіРѕСЂРёР№
 					</td>
 				</tr>
 			</table>
@@ -49,8 +49,8 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 					<td bgcolor="<?=$colorDef?>"
 					onMouseOver="mOverBg(this)"
 					onMouseOut="mOutBg(this)">
-						<h1> Контент </h1>
-						Управление содержимым сайта
+						<h1> РљРѕРЅС‚РµРЅС‚ </h1>
+						РЈРїСЂР°РІР»РµРЅРёРµ СЃРѕРґРµСЂР¶РёРјС‹Рј СЃР°Р№С‚Р°
 					</td>
 				</tr>
 			</table>
@@ -70,8 +70,8 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 					<td bgcolor="<?=$colorDef?>"
 					onMouseOver="mOverBg(this)"
 					onMouseOut="mOutBg(this)">
-						<h1> Рассылка сообщений </h1>
-						Уведомеление подписчиков о радостном событии ;-)
+						<h1> Р Р°СЃСЃС‹Р»РєР° СЃРѕРѕР±С‰РµРЅРёР№ </h1>
+						РЈРІРµРґРѕРјРµР»РµРЅРёРµ РїРѕРґРїРёСЃС‡РёРєРѕРІ Рѕ СЂР°РґРѕСЃС‚РЅРѕРј СЃРѕР±С‹С‚РёРё ;-)
 					</td>
 				</tr>
 			</table>
@@ -90,8 +90,8 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 					<td bgcolor="<?=$colorDef?>"
 					onMouseOver="mOverBg(this)"
 					onMouseOut="mOutBg(this)">
-						<h1> Настройки </h1>
-						Конфигурирование системы
+						<h1> РќР°СЃС‚СЂРѕР№РєРё </h1>
+						РљРѕРЅС„РёРіСѓСЂРёСЂРѕРІР°РЅРёРµ СЃРёСЃС‚РµРјС‹
 					</td>
 				</tr>
 			</table>
@@ -110,8 +110,8 @@ require_once CPANEL_DIR.'/menu_color_chng.php';
 					<td bgcolor="<?=$colorDef?>"
 					onMouseOver="mOverBg(this)"
 					onMouseOut="mOutBg(this)">
-						<h1> Сменить данные для входа </h1>
-						Изменение имени и/или пароля администратора
+						<h1> РЎРјРµРЅРёС‚СЊ РґР°РЅРЅС‹Рµ РґР»СЏ РІС…РѕРґР° </h1>
+						РР·РјРµРЅРµРЅРёРµ РёРјРµРЅРё Рё/РёР»Рё РїР°СЂРѕР»СЏ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
 					</td>
 				</tr>
 			</table>

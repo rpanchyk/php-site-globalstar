@@ -6,14 +6,14 @@
 			<table border="0" width="100%" cellpadding="5" cellspacing="0">
 				<tr>
 					<td>
-						Вы вошли как:<b> <?=$member_db?></b>
+						Р’С‹ РІРѕС€Р»Рё РєР°Рє:<b> <?=$member_db?></b>
 					</td>
 					<td width="60%" align="right">
-						<a href="cp.php" class="cp"> Админцентр </a>
+						<a href="cp.php" class="cp"> РђРґРјРёРЅС†РµРЅС‚СЂ </a>
 						&nbsp;&nbsp;
-						<a href="/" target="_blank" class="cp"> Просмотр сайта </a>
+						<a href="/" target="_blank" class="cp"> РџСЂРѕСЃРјРѕС‚СЂ СЃР°Р№С‚Р° </a>
 						&nbsp;&nbsp;
-						<a href="cp.php?action=logout" class="cp"> Выход </a>
+						<a href="cp.php?action=logout" class="cp"> Р’С‹С…РѕРґ </a>
 					</td>
 				</tr>
 			</table>
@@ -22,4 +22,3 @@
 	<tr><td>&nbsp;</td></tr>
 </table>
 <!-- MAIN HEADER (e) -->
-

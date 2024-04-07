@@ -61,17 +61,17 @@ document [imgName].src = imgOff; } }
           <tr>
             <td height="75" align="center" valign="middle" background="{THEME}/images/background2.jpg"><table border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="center" valign="middle"><a href="index.php?shw=about"><img src="{THEME}/images/about{ABOUT_ACTIVE}.png" alt="Î ÊÎÌÏÀÍÈÈ" width="193" height="22" name="img1" onMouseOver="img_act('img1')" onMouseOut="img_inact('img1')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=about"><img src="{THEME}/images/about{ABOUT_ACTIVE}.png" alt="Ðž ÐšÐžÐœÐŸÐÐÐ˜Ð˜" width="193" height="22" name="img1" onMouseOver="img_act('img1')" onMouseOut="img_inact('img1')" border="0"/></a></td>
                 <td width="15" align="center" valign="middle"><img src="{THEME}/images/nav_spacer2.png" width="10" height="40" /></td>
-                <td align="center" valign="middle"><a href="index.php?shw=dj"><img src="{THEME}/images/djs{DJ_ACTIVE}.png" alt="ÄÈÄÆÅÈ" width="133" height="22" name="img2" onMouseOver="img_act('img2')" onMouseOut="img_inact('img2')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=dj"><img src="{THEME}/images/djs{DJ_ACTIVE}.png" alt="Ð”Ð˜Ð”Ð–Ð•Ð˜" width="133" height="22" name="img2" onMouseOver="img_act('img2')" onMouseOut="img_inact('img2')" border="0"/></a></td>
                 <td width="15" align="center" valign="middle"><img src="{THEME}/images/nav_spacer2.png" width="10" height="40" /></td>
-                <td align="center" valign="middle"><a href="index.php?shw=pj"><img src="{THEME}/images/pjs{PJ_ACTIVE}.png" alt="ÏÈÄÆÅÈ" width="133" height="22" name="img3" onMouseOver="img_act('img3')" onMouseOut="img_inact('img3')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=pj"><img src="{THEME}/images/pjs{PJ_ACTIVE}.png" alt="ÐŸÐ˜Ð”Ð–Ð•Ð˜" width="133" height="22" name="img3" onMouseOver="img_act('img3')" onMouseOut="img_inact('img3')" border="0"/></a></td>
                 <td width="15" align="center" valign="middle"><img src="{THEME}/images/nav_spacer2.png" width="10" height="40" /></td>
-                <td align="center" valign="middle"><a href="index.php?shw=tpj"><img src="{THEME}/images/topless{TPJ_ACTIVE}.png" alt="ÒÎÏËÅÑÑ ÏÈÄÆÅÈ" width="264" height="22" name="img4" onMouseOver="img_act('img4')" onMouseOut="img_inact('img4')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=tpj"><img src="{THEME}/images/topless{TPJ_ACTIVE}.png" alt="Ð¢ÐžÐŸÐ›Ð•Ð¡Ð¡ ÐŸÐ˜Ð”Ð–Ð•Ð˜" width="264" height="22" name="img4" onMouseOver="img_act('img4')" onMouseOut="img_inact('img4')" border="0"/></a></td>
                 <td width="15" align="center" valign="middle"><img src="{THEME}/images/nav_spacer2.png" width="10" height="40" /></td>
-                <td align="center" valign="middle"><a href="index.php?shw=mc"><img src="{THEME}/images/mc{MC_ACTIVE}.png" alt="ÌÑ" width="48" height="22" name="img5" onMouseOver="img_act('img5')" onMouseOut="img_inact('img5')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=mc"><img src="{THEME}/images/mc{MC_ACTIVE}.png" alt="ÐœÐ¡" width="48" height="22" name="img5" onMouseOver="img_act('img5')" onMouseOut="img_inact('img5')" border="0"/></a></td>
                 <td width="15" align="center" valign="middle"><img src="{THEME}/images/nav_spacer2.png" width="10" height="40" /></td>
-                <td align="center" valign="middle"><a href="index.php?shw=contacts"><img src="{THEME}/images/contacts{CONTACTS_ACTIVE}.png" alt="ÊÎÍÒÀÊÒÛ" width="155" height="22" name="img6" onMouseOver="img_act('img6')" onMouseOut="img_inact('img6')" border="0"/></a></td>
+                <td align="center" valign="middle"><a href="index.php?shw=contacts"><img src="{THEME}/images/contacts{CONTACTS_ACTIVE}.png" alt="ÐšÐžÐÐ¢ÐÐšÐ¢Ð«" width="155" height="22" name="img6" onMouseOver="img_act('img6')" onMouseOut="img_inact('img6')" border="0"/></a></td>
               </tr>
             </table></td>
           </tr>
@@ -122,7 +122,7 @@ document [imgName].src = imgOff; } }
               <tr>
                 <td height="20" align="left" valign="middle"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td><img src="{THEME}/images/partners.png" alt="ÏÀÐÒÍÅÐÛ" width="158" height="22" /></td>
+                    <td><img src="{THEME}/images/partners.png" alt="ÐŸÐÐ Ð¢ÐÐ•Ð Ð«" width="158" height="22" /></td>
                   </tr>
                   <tr>
                     <td><table width="100%%" border="0" cellspacing="0" cellpadding="0">

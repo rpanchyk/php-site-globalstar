@@ -38,9 +38,9 @@ foreach ( $catArr as $value )
 }
 $select_category .= '</select>';
 
-$title = 'Редактирование записи';
+$title = 'Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РїРёСЃРё';
 $head = ($pArr[0]['head']) ? stripslashes($pArr[0]['head']) : '';
-$post = ($pArr[0]['post']) ? stripslashes($pArr[0]['post']) : 'Текст записи';
+$post = ($pArr[0]['post']) ? stripslashes($pArr[0]['post']) : 'РўРµРєСЃС‚ Р·Р°РїРёСЃРё';
 $image = ($pArr[0]['xfield6']) ? stripslashes($pArr[0]['xfield6']) : '';
 $short_post = ($pArr[0]['xfield5']) ? stripslashes($pArr[0]['xfield5']) : '';
 $datetime = ($pArr[0]['date_pub']) ? stripslashes($pArr[0]['date_pub']) : '';
@@ -127,7 +127,7 @@ header("Pragma: no-cache");
 </script>
 
 <script type="text/javascript">
-	// Картинка
+	// РљР°СЂС‚РёРЅРєР°
 	tinyMCE.init({
 		// General options
 		mode : "exact",
@@ -194,7 +194,7 @@ header("Pragma: no-cache");
 </script>
 
 <script type="text/javascript">
-	// Короткая новость
+	// РљРѕСЂРѕС‚РєР°СЏ РЅРѕРІРѕСЃС‚СЊ
 	tinyMCE.init({
 		// General options
 		mode : "exact",
@@ -242,7 +242,7 @@ if (empty($httpquery->request['doSend']))
 {
 ?>
 <form method="post" action="<?=$action?>">
-	<input type="submit" name="doSend" value="Отправить" />
+	<input type="submit" name="doSend" value="РћС‚РїСЂР°РІРёС‚СЊ" />
 	<div>&nbsp;</div>
 
 	<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" 
@@ -252,7 +252,7 @@ if (empty($httpquery->request['doSend']))
 		<td> 
 			<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tr> 
-				<td width="10%">Название</td> 
+				<td width="10%">РќР°Р·РІР°РЅРёРµ</td> 
 				<td style="text-align:left"><input type="text" name="head" maxlength="256" value="<?=$head?>" style="width:99%"></td> 
 			</tr>
 			</table>
@@ -262,9 +262,9 @@ if (empty($httpquery->request['doSend']))
 		<td> 
 			<table border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tr> 
-				<td width="10%">Категория</td> 
+				<td width="10%">РљР°С‚РµРіРѕСЂРёСЏ</td> 
 				<td style="text-align:left" width="10%"><?=$select_category?></td>
-				<td width="20%">Порядок (не обязательно)</td> 
+				<td width="20%">РџРѕСЂСЏРґРѕРє (РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)</td> 
 				<td style="text-align:left"><input type="text" name="ord" maxlength="11" value="<?=$ord?>" style="width:20%"></td>
 			</tr>
 			</table>
@@ -286,7 +286,7 @@ if (empty($httpquery->request['doSend']))
 		style="border-color:#EEEEEE; border-style:solid; border-width:2px" bgcolor="#FFFFFF">
 			<tr>
 				<td>
-					<div align="left">Картинка:</div>
+					<div align="left">РљР°СЂС‚РёРЅРєР°:</div>
 					<textarea id="image" name="image" rows="10" cols="50" style="width:99%;"><?=$image?></textarea>
 				</td>
 			</tr>
@@ -296,7 +296,7 @@ if (empty($httpquery->request['doSend']))
 		style="border-color:#EEEEEE; border-style:solid; border-width:2px" bgcolor="#FFFFFF">
 			<tr>
 				<td>
-					<div align="left">Короткая новость:</div>
+					<div align="left">РљРѕСЂРѕС‚РєР°СЏ РЅРѕРІРѕСЃС‚СЊ:</div>
 					<textarea id="short_post" name="short_post" rows="10" cols="50" style="width:99%;"><?=$short_post?></textarea>
 				</td>
 			</tr>
@@ -307,7 +307,7 @@ if (empty($httpquery->request['doSend']))
 	
 	<div>&nbsp;</div>
 	<input type="hidden" name="id" value="<?=intval($httpquery->request['id'])?>">
-	<input type="submit" name="doSend" value="Отправить" />
+	<input type="submit" name="doSend" value="РћС‚РїСЂР°РІРёС‚СЊ" />
 </form>
 <?
 }
@@ -342,7 +342,7 @@ else
 		{
 			$paramArr['date_pub'] = 'NULL';
 			if ($cArr[0]['name'] == 'afisha')
-				echo 'Время не было указано.';
+				echo 'Р’СЂРµРјСЏ РЅРµ Р±С‹Р»Рѕ СѓРєР°Р·Р°РЅРѕ.';
 		}
 		
 		if (
@@ -382,7 +382,7 @@ else
 		{
 			$paramArr['date_pub'] = 'NULL';
 			if ($cArr[0]['name'] == 'afisha')
-				echo 'Время не было указано.';
+				echo 'Р’СЂРµРјСЏ РЅРµ Р±С‹Р»Рѕ СѓРєР°Р·Р°РЅРѕ.';
 		}
 		
 		if (
@@ -406,9 +406,9 @@ else
 	
 	</script>
 	<center>
-		<h5>Операция завершена</h5>
+		<h5>РћРїРµСЂР°С†РёСЏ Р·Р°РІРµСЂС€РµРЅР°</h5>
 		<br>
-		<input type="button" onclick="javascript:window.close()" value="Закрыть" />
+		<input type="button" onclick="javascript:window.close()" value="Р—Р°РєСЂС‹С‚СЊ" />
 	</center>
 	<?
 }

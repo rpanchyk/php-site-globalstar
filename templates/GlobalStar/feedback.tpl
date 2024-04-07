@@ -4,13 +4,13 @@
   <form method="post" action="{ACTION}">
   <div id="form">
     <div id="fields">
-      <label for="inputname">Имя:</label>
+      <label for="inputname">РРјСЏ:</label>
       <input type="text" name="sender_name" maxlength="256" />
       <br />
       <label for="inputmail">E-mail:</label>
       <input type="text" name="sender_mail" maxlength="256" />
       <br />
-      <label for="inputmessage">Сообщение:</label>
+      <label for="inputmessage">РЎРѕРѕР±С‰РµРЅРёРµ:</label>
       <textarea name="message" cols="28" rows="5"></textarea>
     </div>
     <div id="send">
@@ -20,12 +20,12 @@
     </div>
   </div>
   </form>
-	<h3>Наш адрес</h3>
+	<h3>РќР°С€ Р°РґСЂРµСЃ</h3>
 	<ul>
-	  <li>г. Киев</li>
-	  <li>ул. Драгоманова, 9</li>
-	  <li>Тел.: 1234 123 23 45</li>
-	  <li>Факс: 1234 123 23 45</li>
-	  <li><a href="mailto:info@aqualive.com">info@aqualive.com</a></li>
+	  <li>Рі. РљРёРµРІ</li>
+	  <li>СѓР». РҐСЂРµС‰Р°С‚РёРє, 1</li>
+	  <li>РўРµР».: 1234 123 23 45</li>
+	  <li>Р¤Р°РєСЃ: 1234 123 23 45</li>
+	  <li><a href="mailto:info@example.com">info@example.com</a></li>
 	</ul>
 </div>

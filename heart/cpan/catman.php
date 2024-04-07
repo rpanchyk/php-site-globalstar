@@ -54,9 +54,9 @@ function showForm( $cname='', $crusname='', $ord=1, $upd = FALSE )
 		<table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" 
 		style="border-color:#FFFFFF; border-style:solid; border-width:2px" bgcolor="#DDDDDD">
 			<tr style="font-weight:bold;text-align:center">
-				<td> Название категории (англ.) </td>
-				<td> Название категории (рус.) </td>
-				<td> Сортировка </td>
+				<td> РќР°Р·РІР°РЅРёРµ РєР°С‚РµРіРѕСЂРёРё (Р°РЅРіР».) </td>
+				<td> РќР°Р·РІР°РЅРёРµ РєР°С‚РµРіРѕСЂРёРё (СЂСѓСЃ.) </td>
+				<td> РЎРѕСЂС‚РёСЂРѕРІРєР° </td>
 			</tr>
 			<tr align=center>
 				<td width="30%">
@@ -72,7 +72,7 @@ function showForm( $cname='', $crusname='', $ord=1, $upd = FALSE )
 		</table>
 		<center>
 			<input type="hidden" name="upd" value="<?=$upd?>">
-			<input type="submit" name="doSend" value="Отправить" class="bbc">
+			<input type="submit" name="doSend" value="РћС‚РїСЂР°РІРёС‚СЊ" class="bbc">
 		</center>
 		</form>
 	<?
@@ -104,13 +104,13 @@ function showCats()
 						<font style="font-size:11px; font-family:Verdana;"><?=$val['ord']?></font>
 					</td>
 					<td width="30%">
-						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&edt=<?=$val['id']?>" class="cp" title="Редактировать"><?=$val['name']?></a>
+						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&edt=<?=$val['id']?>" class="cp" title="Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ"><?=$val['name']?></a>
 					</td>
 					<td width="30%">
-						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&edt=<?=$val['id']?>" class="cp" title="Редактировать"><?=$val['rusname']?></a>
+						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&edt=<?=$val['id']?>" class="cp" title="Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ"><?=$val['rusname']?></a>
 					</td>
 					<td align="center">
-						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&del=<?=$val['id']?>" class="cp" title="Удалить">[x]</a>
+						<a href="<?=$_SERVER['SCRIPT_NAME']?>?action=cat&del=<?=$val['id']?>" class="cp" title="РЈРґР°Р»РёС‚СЊ">[x]</a>
 					</td>
 				</tr>
 		<?

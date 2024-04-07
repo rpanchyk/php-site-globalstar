@@ -7,11 +7,11 @@
 
 require_once dirname(__FILE__).'/init_engine.php';
 
-$aMonth = array(1 => 'Января','Февраля','Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября','Декабря');
+$aMonth = array(1 => 'РЇРЅРІР°СЂСЏ','Р¤РµРІСЂР°Р»СЏ','РњР°СЂС‚Р°','РђРїСЂРµР»СЏ','РњР°СЏ','РСЋРЅСЏ','РСЋР»СЏ','РђРІРіСѓСЃС‚Р°','РЎРµРЅС‚СЏР±СЂСЏ','РћРєС‚СЏР±СЂСЏ','РќРѕСЏР±СЂСЏ','Р”РµРєР°Р±СЂСЏ');
 
 $skin = 'GlobalStar';
 
-define( 'CACHE_TIME', '0' ); // секунд
+define( 'CACHE_TIME', '0' ); // СЃРµРєСѓРЅРґ
 define( 'LISTBLOCK_WIDTH', '35%' );
 define( 'LISTBLOCK_MAX_COUNT', '25' );
 define( 'SHORT_POST_LENGTH', '200' );
@@ -24,7 +24,7 @@ $tpl->load('main.tpl');
 $tpl->set( '{THEME}', $tpl->relative_path );
 $tpl->set('{TITLE}', 'GLOBAL STAR');
 
-// Для показа контента
+// Р”Р»СЏ РїРѕРєР°Р·Р° РєРѕРЅС‚РµРЅС‚Р°
 $dataPost = null;
 $dataCategory = null;
 $dataCategoryManualList = null;
@@ -37,12 +37,12 @@ if (!$httpquery->request['shw'])
 	
 if ($httpquery->request['pid'])
 {
-	// Пытаемся получить ID
+	// РџС‹С‚Р°РµРјСЃСЏ РїРѕР»СѓС‡РёС‚СЊ ID
 	$pID = intval($httpquery->request['pid']);
 	
 	if ($pID)
 	{
-		// Получаем запись
+		// РџРѕР»СѓС‡Р°РµРј Р·Р°РїРёСЃСЊ
 		$dataPost = GetPostByID($pID); //echo '<pre>'; print_r($dataPost); echo '</pre>';
 		ShowHtmlContent($dataPost, $skin);
 		
@@ -59,7 +59,7 @@ if ($httpquery->request['pid'])
 }
 else
 {
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$dataCategory = GetCategoryByName($httpquery->request['shw']); //echo '<pre>'; print_r($dataCategory); echo '</pre>';
 	
 	if (count($dataCategory))
@@ -79,7 +79,7 @@ else
 		
 		if ($IsMultiPage)
 		{
-			// Выводим список постов
+			// Р’С‹РІРѕРґРёРј СЃРїРёСЃРѕРє РїРѕСЃС‚РѕРІ
 			$dataPosts = GetPosts($dataCategory[0]['id']); //echo '<pre>'; print_r($dataPosts); echo '</pre>';
 			
 			$strPosts = '<div style="font-family:Tahoma;">Sorry, page is empty.</div>';
@@ -121,7 +121,7 @@ else
 		}
 		else 
 		{
-			// Получаем запись
+			// РџРѕР»СѓС‡Р°РµРј Р·Р°РїРёСЃСЊ
 			$dataPost = GetPostByCategoryID($dataCategory[0]['id']);
 			ShowHtmlContent($dataPost, $skin);
 		}
@@ -148,10 +148,10 @@ function ErrorException($errorID = 0, $errorInfo = '')
 	switch ($errorID)
 	{
 		case 404:
-			$errorMessage = '<h1>404</h1><h5>Страница не найдена</h5>';
+			$errorMessage = '<h1>404</h1><h5>РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°</h5>';
 			break;
 		default:
-			$errorMessage = '<h1>XXX</h1><h5>Неизвесная ошибка</h5>';
+			$errorMessage = '<h1>XXX</h1><h5>РќРµРёР·РІРµСЃРЅР°СЏ РѕС€РёР±РєР°</h5>';
 			break;
 	}
 	
@@ -173,13 +173,13 @@ function SetListBlock($dataCategory, $dataCategoryManualList, $skin, $aMonth)
 	
 	if ($IsMultiPage)
 	{
-		// Содержимое списка
+		// РЎРѕРґРµСЂР¶РёРјРѕРµ СЃРїРёСЃРєР°
 		$listContent = '';
 		$listWidth = LISTBLOCK_WIDTH;
 		
 		if (count($dataCategoryManualList) > 0)
 		{
-			// Получаем запись
+			// РџРѕР»СѓС‡Р°РµРј Р·Р°РїРёСЃСЊ
 			$dataList = GetPostByCategoryID($dataCategoryManualList[0]['id']);
 			
 			if (count($dataCategoryManualList) > 0)
@@ -187,7 +187,7 @@ function SetListBlock($dataCategory, $dataCategoryManualList, $skin, $aMonth)
 				$listContent = stripslashes($dataList[0]['post']);
 			}
 			else
-				{ $listContent = 'Пустой список'; }
+				{ $listContent = 'РџСѓСЃС‚РѕР№ СЃРїРёСЃРѕРє'; }
 		}
 		else
 		{
@@ -198,11 +198,11 @@ function SetListBlock($dataCategory, $dataCategoryManualList, $skin, $aMonth)
 					$dataCategory = GetCategoryByName('afisha');
 				}
 				
-				// Получаем N-записей категории
+				// РџРѕР»СѓС‡Р°РµРј N-Р·Р°РїРёСЃРµР№ РєР°С‚РµРіРѕСЂРёРё
 				$query = 'SELECT * FROM '.PREFIX.'_post WHERE cat_id = '.$dataCategory[0]['id'].' ORDER BY IFNULL(date_pub,0) DESC LIMIT '.LISTBLOCK_MAX_COUNT;
 				$dataMultiPost = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($dataMultiPost); echo '</pre>';
 				
-				// Формируем автоматический спсок
+				// Р¤РѕСЂРјРёСЂСѓРµРј Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ СЃРїСЃРѕРє
 				if (count($dataMultiPost) > 0)
 				{
 					foreach ($dataMultiPost as $value)
@@ -245,11 +245,11 @@ function SetListBlock($dataCategory, $dataCategoryManualList, $skin, $aMonth)
 					$listWidth = (($dataCategoryTmp[0]['name'] == 'main') ? LISTBLOCK_WIDTH : '100%');
 				}
 				else
-					{ $listContent = 'Пустой список'; }
+					{ $listContent = 'РџСѓСЃС‚РѕР№ СЃРїРёСЃРѕРє'; }
 			}
 		}
 		
-		// Заполняем блок-список
+		// Р—Р°РїРѕР»РЅСЏРµРј Р±Р»РѕРє-СЃРїРёСЃРѕРє
 		$tpl_cont = new fth_template;
 		$tpl_cont->relative_path = 'templates' . SLASH . $skin;
 		$tpl_cont->absolute_path = ROOT_DIR . SLASH . 'templates' . SLASH . $skin;
@@ -262,12 +262,12 @@ function SetListBlock($dataCategory, $dataCategoryManualList, $skin, $aMonth)
 	}
 	else
 	{
-		// Иначе - затираем список
+		// РРЅР°С‡Рµ - Р·Р°С‚РёСЂР°РµРј СЃРїРёСЃРѕРє
 		$tpl->set('{LISTBLOCK_WIDTH}', '0');
 		$tpl->set('{LISTBLOCK}', '');
 	}
 
-	// Возврат	
+	// Р’РѕР·РІСЂР°С‚	
 	if ($dataCategoryTmp[0]['name'] == 'main')
 	{ $IsMultiPage = false; }
 }
@@ -276,7 +276,7 @@ function GetPostByID($pID)
 {
 	global $db;
 	
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$query = 'SELECT * FROM '.PREFIX.'_post WHERE id = '.$pID.' ORDER BY date_add DESC LIMIT 1';
 	$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
 		
@@ -286,7 +286,7 @@ function GetPostByCategoryID($catID)
 {
 	global $db;
 	
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$query = 'SELECT * FROM '.PREFIX.'_post WHERE cat_id = '.$catID.' ORDER BY date_add DESC LIMIT 1';
 	$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
 	
@@ -296,7 +296,7 @@ function GetPosts($catID)
 {
 	global $db;
 	
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$query = 'SELECT * FROM '.PREFIX.'_post WHERE cat_id = '.$catID.' ORDER BY ord LIMIT 1000';
 	$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
 	
@@ -308,7 +308,7 @@ function GetCategoryByID($catID)
 {
 	global $db;
 	
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$query = 'SELECT * FROM '.PREFIX.'_category WHERE id = '.$catID;
 	$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
 	
@@ -318,7 +318,7 @@ function GetCategoryByName($catName)
 {
 	global $db;
 	
-	// Получаем категорию
+	// РџРѕР»СѓС‡Р°РµРј РєР°С‚РµРіРѕСЂРёСЋ
 	$query = 'SELECT * FROM '.PREFIX.'_category WHERE name = \''.$catName.'\' ORDER BY id LIMIT 1';
 	$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
 	//$data = $db->query( $query, CACHE_TIME ); //echo '<pre>'; print_r($data); echo '</pre>';
